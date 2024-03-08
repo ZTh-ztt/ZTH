@@ -1,0 +1,34 @@
+#!/bin/bash
+while true
+do
+	echo ""
+	echo "-----欢迎使用本系统------"
+	echo "[1]登陆系统"
+	echo "[2]显示当前系统日期"
+	echo "[3]五颜六色的终端"
+	echo "[4]系统检测"
+	echo "[5]俄罗斯方块"
+	echo "[6]退出本系统"
+	echo "-------------------------"
+	echo ""
+	echo -n "请输入你的选项："
+	read CHIOCE
+	case $CHIOCE in
+	1)echo "欢迎尊敬的$USER登陆本系统！！！"
+	  ;;
+	2)echo "尊敬的$USER，当前系统日期是："
+	  echo 'data'
+	  echo '祝您今天心情愉快！！！'
+	  ;;
+	3)echo "五颜六色的终端"
+	  ;;
+	4)echo "系统检测"
+	  ;;
+	5)echo "俄罗斯方块"
+	  ;;
+	6)echo "谢谢使用本系统，再见！"
+	  exit
+	  ;;
+	*)echo "请输入合法的选项"
+	esac
+done
